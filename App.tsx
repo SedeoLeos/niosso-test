@@ -4,7 +4,10 @@ import InfoApp from './screens/InfoApp';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Annonce from './screens/Annonces';
+import Annonce from './screens/Annonce';
+import Favory from './screens/Favory';
+import Help from './screens/Help';
+import AskMarker from './screens/AskMarker';
 // import InfoApp from 'screens/InfoApp';
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -12,7 +15,8 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown:false, }}>
-          <Stack.Screen name='step1' component={Annonce} />
+          <Stack.Screen name='annonce' component={AskMarker} />
+          <Stack.Screen name='step1' component={Favory} />
           <Stack.Screen name='step2' component={Screen2}/>
           <Stack.Screen name='step3' component={Screen3}/>
         </Stack.Navigator>
