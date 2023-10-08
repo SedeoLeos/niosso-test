@@ -4,7 +4,7 @@ import Badge from '../Badge'
 import { data } from './data'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
-const ItemDetailSilder = () => {
+const ItemDetailSilder = ({onPress}) => {
     const {width} = useWindowDimensions();
     const inset =useSafeAreaInsets()
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +51,7 @@ const ItemDetailSilder = () => {
                 ref={sliderRef}
                 style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }} data={data} renderItem={(data) => <Image style={{objectFit:'cover',width,height:'100%'}} source={data.item.image} />} />
                 <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={onPress}>
                         <Badge color='#000' iconSize={25} icon={'arrow-back-outline'} backgroundColor='#D9D9D980' />
                     </TouchableOpacity>
                     <View style={{ flexDirection: 'row', columnGap: 10 }}>
