@@ -1,5 +1,5 @@
 import { LinearGradient } from "expo-linear-gradient";
-import { ImageBackground, View, useWindowDimensions, Text, GestureResponderEvent, ImageSourcePropType } from "react-native";
+import { ImageBackground, View, Text, GestureResponderEvent, ImageSourcePropType } from "react-native";
 import { styles } from './style'
 export class AboutingPropos {
     image: ImageSourcePropType;

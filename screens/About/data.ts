@@ -7,13 +7,13 @@ export const data = [
     },
     {
         id:'2',
-        image: require('../../assets/marker-yes.jpg'),
+        image: require('../../assets/yes.jpg'),
         title:'TRES SIMPLE A UTILISER',
         describe:'Niosso vous offre un parcours utilisateur très simple à utiliser et rapide, vous assurant aussi une sécurité totale de vos données.'
     },
     {
         id:'3',
-        image: require('../../assets/marker-yes.jpg'),
+        image: require('../../assets/fruit.jpg'),
         title:'ACHETER ET VENDER !!!',
         describe:"Achetez et vendez tout, des voitures d'occasion aux téléphones portables et aux ordinateurs, ou recherchez une propriété, un emploi et plus encore."
     }
