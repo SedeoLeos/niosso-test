@@ -34,13 +34,13 @@ export const AnnonceData = [
     { id:'14',category: 'tablette', image: require('../../assets/categorie/tablette.png') },
     { id:'15',category: 'Vetements', image: require('../../assets/categorie/vetements.png') },
     { id:'16',category: 'Voitures', image: require('../../assets/categorie/voitures.png') },
-    { id:'10',category: 'moto', image: require('../../assets/categorie/moto.png') },
-    { id:'11',category: 'montre bracelet', image: require('../../assets/categorie/montre-bracelet.png') },
-    { id:'12',category: 'ordinateur', image: require('../../assets/categorie/ordinateur.png') },
-    { id:'13',category: 'Livres', image: require('../../assets/categorie/livres.png') },
-    { id:'14',category: 'tablette', image: require('../../assets/categorie/tablette.png') },
-    { id:'15',category: 'Vetements', image: require('../../assets/categorie/vetements.png') },
-    { id:'16',category: 'Voitures', image: require('../../assets/categorie/voitures.png') },
+    { id:'17',category: 'moto', image: require('../../assets/categorie/moto.png') },
+    { id:'18',category: 'montre bracelet', image: require('../../assets/categorie/montre-bracelet.png') },
+    { id:'19',category: 'ordinateur', image: require('../../assets/categorie/ordinateur.png') },
+    { id:'20',category: 'Livres', image: require('../../assets/categorie/livres.png') },
+    { id:'21',category: 'tablette', image: require('../../assets/categorie/tablette.png') },
+    { id:'22',category: 'Vetements', image: require('../../assets/categorie/vetements.png') },
+    { id:'23',category: 'Voitures', image: require('../../assets/categorie/voitures.png') },
    
     // Ajoutez d'autres catégories avec leurs images ici
   ];

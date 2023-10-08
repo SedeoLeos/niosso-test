@@ -5,15 +5,13 @@ const styles = StyleSheet.create({
         
         height:43,
         paddingHorizontal:10,
-        backgroundColor:'#dbe2ee',
-        borderColor:"#dfe7f6",
+        backgroundColor:'#0044BB1A',
+        borderColor:"#0044BB4D",
+        borderWidth:1,
         borderRadius:5,
         flex:1,
-        // justifyContent: 'space-between',
         flexDirection:'row',
         marginRight:10
-        
-
     },
     inputContainer:{
         flex:3,
@@ -31,7 +29,7 @@ const styles = StyleSheet.create({
         
     },
     locationButton:{
-        borderLeftColor:'#dfe7f6',
+        borderLeftColor:"#0044BB4D",
         borderLeftWidth:1,
         flexDirection:'row',
         alignItems:'center',

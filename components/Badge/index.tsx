@@ -8,14 +8,15 @@ export class BadgeProps {
     iconSize?:number=25
     color:string
     backgroundColor?:string
+    textSize?:number
 }
 const Badge = (data: BadgeProps) => {
-    const {text,icon,iconSize,color,backgroundColor } = data;
+    const {text,icon,iconSize,color,backgroundColor,textSize } = data;
     console.log(iconSize,icon)
   return (
     <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row', padding: 5,columnGap:5, backgroundColor:backgroundColor , borderRadius: 30 }}>
         {icon ? <Ionicons name={icon} style={[{color:color}]} size={iconSize} />:null}
-        {text ?<Text style={[{color:color}]} >{text}</Text>:null}
+        {text ?<Text style={[{color:color,fontSize:textSize},]} >{text}</Text>:null}
     </View>
   )
 }

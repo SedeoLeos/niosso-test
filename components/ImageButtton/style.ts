@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     catherogierItem:{
         alignItems:'center',
-        marginLeft:5,
         width:70,
         rowGap:5,
     },
@@ -20,16 +19,11 @@ const styles = StyleSheet.create({
     catherogierItemImage:{
         width:25,
         height:25,
-
-        // objectFit:"cover",
     },
     catherogierItemTest:{
         color:'rgba(0, 0, 0, 1)',
         textAlign:'center',
         fontSize:9,
-        // width:60,
-        // flex:1,
-        // flexWrap:'wrap',
     }
 })
 export default styles;

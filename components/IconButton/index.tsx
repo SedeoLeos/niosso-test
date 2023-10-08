@@ -1,4 +1,4 @@
-import { Pressable } from 'react-native'
+import { Pressable, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons';
 class IconButtonProps {
@@ -9,9 +9,9 @@ const IconButton = (data:IconButtonProps) => {
     const {name}=data;
 
   return (
-    <Pressable>
+    <TouchableOpacity>
                <Ionicons name={name} size={25} color="#0044BB"/>
-    </Pressable>
+    </TouchableOpacity>
   )
 }
 

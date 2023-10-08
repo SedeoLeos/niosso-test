@@ -5,14 +5,14 @@ const styles = StyleSheet.create({
         // margin:20,
         backgroundColor: '#fff',
         borderRadius: 5, 
-        elevation: 5,
+        elevation: 2,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
             height: 2,
         },
-        shadowOpacity: 0.5,
-        shadowRadius: 4,
+        shadowOpacity: 0.2,
+        shadowRadius: 2,
     },
     image:{
         flex: 5,
@@ -39,6 +39,16 @@ const styles = StyleSheet.create({
     moreItem:{
         flex: 1, 
         padding: 10
+    },
+    textTitle:{
+        fontWeight:'600',
+        color:'rgba(0, 0, 0, 0.9)',
+        fontSize:22,
+    },
+    textDescrible:{
+        color:'#666666',
+        fontWeight:'500',
+        fontSize:15
     }
 })
 export default styles;
