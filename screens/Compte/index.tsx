@@ -39,7 +39,7 @@ const MyAnnonce = () => {
 
     return (<ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between', rowGap: 10, columnGap: 5, padding: '2%',paddingBottom:100 }}>
-            {AnnonceData.map((data) => (
+            {AnnonceData.map((data,index) => (
                 <AnnonceItem isVedete={false} image={data.image} title={data.title} location='Brazzaville' amount={data.amount} width={'49%'} devise={'FCFA'} time={'3 minutes'} />
             ))}
         </View>
@@ -51,7 +51,6 @@ const CustomHeader = () => {
         <View style={{ paddingTop: inset.top,backgroundColor: '#fff',marginBottom:20 }}>
             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', }}>
                 <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
-                    {/* <Text>Mon compte</Text> */}
                 </View>
                 <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                     <Text style={{ textAlign:'center' }}>Mon compte</Text>

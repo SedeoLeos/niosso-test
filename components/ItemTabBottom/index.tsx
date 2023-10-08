@@ -8,7 +8,7 @@ const ItemTabBottom = ({ navigation, tab, state, index }) => {
         <TouchableOpacity
             key={index}
             onPress={() => navigation.navigate(tab.route)}
-            style={[styles.button, { backgroundColor: tab.bg }]}
+            style={[styles.button, { backgroundColor: tab.bg&&tab.bg }]}
         >
             <Ionicons
                 name={tab.icon}

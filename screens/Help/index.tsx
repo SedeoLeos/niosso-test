@@ -45,7 +45,7 @@ const data = [
 const Help = () => {
   return (
     <View  style={{ rowGap:10,paddingVertical:30 }}>
-      {data.map((item,index)=>index !== data.length -1 && <HelpItem item={item} isOther={false}/>)}
+      {data.map((item,index)=>index !== data.length -1 && <HelpItem key={index} item={item} isOther={false}/>)}
       <HelpItem item={data[data.length-1]} isOther/>
     </View>
   )

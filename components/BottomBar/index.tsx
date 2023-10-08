@@ -42,7 +42,7 @@ const BottomBar = ({ navigation, state }) => {
   return (
     <View style={[styles.container,{paddingBottom: inset.bottom} ]}>
       {tabs.map((tab, index) => (
-        <ItemTabBottom tab={tab} index={index} state={state} navigation={navigation}/>
+        <ItemTabBottom key={index} tab={tab} index={index} state={state} navigation={navigation}/>
       ))}
     </View>
   );
