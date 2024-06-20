@@ -2,7 +2,7 @@ import { View, Text, Button, Image, ImageBackground, FlatList, TouchableOpacity 
 import React, { useEffect, useLayoutEffect } from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useNavigation } from '@react-navigation/native';
+
 
 const AskMarker = ({navigation}) => {
   const inset = useSafeAreaInsets()
@@ -26,7 +26,7 @@ const AskMarker = ({navigation}) => {
         }, // Décalage de l'ombre (x, y)
         shadowOpacity: 0.4, // Opacité de l'ombre (0.0 - 1.0)
         shadowRadius: 4,  }} onPress={handBack}>
-            <Ionicons name='ios-arrow-back'  color={'#fff'} size={20}/>
+            <Ionicons name='arrow-back'  color={'#fff'} size={20}/>
         </TouchableOpacity>
       ),
       headerRight: () => (

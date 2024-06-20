@@ -18,7 +18,6 @@ const IndicatorCircle = ({ data,scrollX, index }) => {
                     outputRange:['transparent','#FFFFFF','transparent'],
                     extrapolate:'clamp'
                 })
-                console.log(idx, 'fix',index);
                 return (<Animated.View key={idx.toString()} style={[styles.step,{width:dotWidth,backgroundColor:dotbg},]}/>)
             })}
         </View>

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "niosso-app",
-    "slug": "niosso-app",
+    "slug": "niosso",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.slaega.niosso"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.slaega.niosso"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "867ab368-3eda-4b67-aabc-629c2e126b93"
+      }
+    },
+    "owner": "slaega"
   }
 }

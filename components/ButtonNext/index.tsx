@@ -7,7 +7,7 @@ const ButtonNexted = (props:{onPress?:any}) => {
   return (
     <Pressable onPress={props.onPress} style={styles.contenaire}>
       <Text style={styles.text}>Suivant</Text>
-      <Ionicons name='ios-arrow-forward' style={{ color:'#0044BB' }} size={30} />
+      <Ionicons name='arrow-forward' style={{ color:'#0044BB' }} size={30} />
     </Pressable>
   )
 }

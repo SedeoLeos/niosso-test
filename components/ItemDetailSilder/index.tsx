@@ -37,7 +37,7 @@ const ItemDetailSilder = ({onPress}) => {
         itemVisiblePrecentThreshold: 50,
     })
     return (
-        <View style={{ position: 'relative' ,justifyContent: 'space-between', padding: 10,backgroundColor:'red',width,height:500,paddingTop:inset.top}}>
+        <View style={{ position: 'relative' ,justifyContent: 'space-between', padding: 10,width,height:500,paddingTop:inset.top}}>
             <FlatList
                 horizontal
                 snapToAlignment='center'

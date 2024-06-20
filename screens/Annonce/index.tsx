@@ -18,13 +18,13 @@ const Annonce = () => {
         </View>
         <View style={styles.bottomHeader}>
           <Text style={styles.bottomHederTitle}>Catégories</Text>
-          <FlatList data={categoriesData} keyExtractor={(item)=>item.id} renderItem={(data) => (<ImageButtonText image={data.item.image} text={data.item.category} />)} showsHorizontalScrollIndicator={false} horizontal={true} />
+          <FlatList data={categoriesData} keyExtractor={(item)=>item.id} renderItem={(data) => (<ImageButtonText key={data.index.toString()} image={data.item.image} text={data.item.category} />)} showsHorizontalScrollIndicator={false} horizontal={true} />
         </View>
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between', rowGap: 10, columnGap: 5, padding: '2%' }}>
-          {AnnonceData.map((data) => (
-            <AnnonceItem isVedete={data.isVedette} image={data.image} title={data.title} location='Brazzaville' amount={data.amount} width={data.isVedette ? '100%' : '49%'} devise={'FCFA'} time={'3 minutes'} />
+          {AnnonceData.map((data,index) => (
+            <AnnonceItem  key={index} isVedete={data.isVedette} image={data.image} title={data.title} location='Brazzaville' amount={data.amount} width={data.isVedette ? '100%' : '49%'} devise={'FCFA'} time={'3 minutes'} />
           ))}
         </View>
       </ScrollView>

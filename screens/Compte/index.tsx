@@ -40,7 +40,7 @@ const MyAnnonce = () => {
     return (<ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between', rowGap: 10, columnGap: 5, padding: '2%',paddingBottom:100 }}>
             {AnnonceData.map((data,index) => (
-                <AnnonceItem isVedete={false} image={data.image} title={data.title} location='Brazzaville' amount={data.amount} width={'49%'} devise={'FCFA'} time={'3 minutes'} />
+                <AnnonceItem key={index} isVedete={false} image={data.image} title={data.title} location='Brazzaville' amount={data.amount} width={'49%'} devise={'FCFA'} time={'3 minutes'} />
             ))}
         </View>
     </ScrollView>)
